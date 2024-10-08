@@ -1,0 +1,56 @@
+[versions]
+kotlin = "2.0.20"
+kotlinx-coroutines = "1.9.0"
+
+
+agp = "8.5.2"
+android-compileSdk = "34"
+android-minSdk = "24"
+android-targetSdk = "34"
+androidx-activityCompose = "1.9.2"
+compose = "1.7.2"
+compose-plugin = "1.7.0-beta02"
+composeWindowSize = "0.5.0"
+filekit = "0.8.0"
+generativeai = "0.9.0-1.0.1-wasm"
+horologist = "0.6.20"
+junit = "4.13.2"
+voyager= "1.0.0"
+buildkonfig = "0.15.2"
+markdownRenderer = "0.26.0"
+wearCompose = "1.4.0"
+
+[libraries]
+kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+
+generativeai = { module = "dev.shreyaspatil.generativeai:generativeai-google", version.ref = "generativeai" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+
+androidx-wear-compose-navigation = { module = "androidx.wear.compose:compose-navigation", version.ref = "wearCompose" }
+
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-window-size = { module = "dev.chrisbanes.material3:material3-window-size-class-multiplatform", version.ref = "composeWindowSize" }
+
+filekit-compose = { module = "io.github.vinceglb:filekit-compose", version.ref = "filekit" }
+
+markdown-renderer = { module = "com.mikepenz:multiplatform-markdown-renderer-m3", version.ref = "markdownRenderer" }
+markdown-renderer-core = { module = "com.mikepenz:multiplatform-markdown-renderer", version.ref = "markdownRenderer" }
+
+horologist-composables = { module = "com.google.android.horologist:horologist-composables", version.ref = "horologist" }
+horologist-compose-layout = { module = "com.google.android.horologist:horologist-compose-layout", version.ref = "horologist" }
+horologist-ai-ui = { module = "com.google.android.horologist:horologist-ai-ui", version.ref = "horologist" }
+compose-material-iconsext = "androidx.compose.material:material-icons-extended:1.6.7"
+
+voyager = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+desugar = "com.android.tools:desugar_jdk_libs:2.0.4"
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+buildkonfig = { id = "com.codingfeline.buildkonfig", version.ref = "buildkonfig" }
